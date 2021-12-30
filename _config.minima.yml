@@ -19,7 +19,6 @@ project_list:
 menu:
   Service: /Service
   About: /About
-  Archives: /Archives
 
 #index/main page max show posts (in number)
 max_post: 10
@@ -41,7 +40,7 @@ github: https://github.com/daocatt
 linkedin: https://linkedin.com/in/ecdohiro
 twitter: https://twitter.com/ecdohiro
 # instagram: https://instagram.com/adisaktijrs
-gtd.xyz: https://app.gtd.xyz
+telegram: https://t.me/sudanotes
 
 # Misc
 nanobar: /js/nanobar.min.js
