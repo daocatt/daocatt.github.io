@@ -14,7 +14,6 @@ project_title: "Working"
 project_list:
   - {name: Suda, link: https://suda.gtd.xyz}
   - {name: GTD, link: https://app.gtd.xyz}
-  
 
 #menu
 menu:
@@ -26,7 +25,7 @@ max_post: 10
 
 # Colors use hex color without #
 # Theme color
-tcolor: c1ac9e
+tcolor: C1AC9E
 
 # Define path to user css
 #(could be also located outside of theme)
