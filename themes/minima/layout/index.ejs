@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="column">
+    <!-- Main information, edit it on theme/_config.yml -->
+    <h2 class="mb-2"><%= theme.owner %></h2>
+    <p><%= theme.info %></p>
+    <p><%= theme.desc %></p>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="column">
+    <!-- Main information, edit it on theme/_config.yml -->
+    <h2 class="mb-2"><%= theme.project_title %></h2>
+    <% theme.project_list.forEach(function(item){ %>
+      
+      <div class="left">
+        <a href="<%- url_for(item.link) %>">
+          <%- item.name %>
+        </a>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+<h2 class="mt-3">Recent Posts</h2>
+
+<% site.posts.sort('date', 'desc').limit(theme.max_post).forEach(function(post){ %>
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom"><%- full_date(post.date, 'll') %></p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="<%- url_for(post.path) %>" >
+      <% if (post.title == "") { %>
+        no title
+      <% } else { %>
+        <%- post.title %>
+      <% } %>
+    </a>
+  </div>
+</div>
+<% }) %>
+
+<h4> <a href="<%= config.root %>archives">All Posts</a></h4>
