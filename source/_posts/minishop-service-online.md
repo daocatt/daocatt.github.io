@@ -1,7 +1,8 @@
 ---
 title: 小商店装修插件上线
 date: 2021-12-29 15:50:21
-categories: 'logs'
+categories: 
+- 'logs'
 ---
 
 基于 速搭 的小商店装修插件已经上线运营
