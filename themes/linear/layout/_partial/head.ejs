@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="google-site-verification" content="<%- theme.verimeta %>" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta itemprop="name" content="<%- config.title %>" />
+  <meta itemprop="description" content="<%- config.subtitle || config.description %>" />
+  <meta itemprop="image" content="<%- theme.favicon %>" />
+  <link rel="shortcut icon" href="<%- theme.favicon %>" type="image/x-icon">
+  <!-- keywords and description -->
+  <% if (is_home()) { %>
+  <meta name="keywords" content="<%- config.keywords && config.keywords.join(', ') %>" />
+  <meta name="description" content="<%- config.description %>">
+  <% } else { %>
+  <meta name="keywords" content="<%- page.keywords && page.keywords.join(", ") %>" />
+  <meta name="description" content="<%- page.description || '' %>" />
+  <% } %>
+  <%- css('css/style') %>
+  <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+</head>
