@@ -1,2 +1,0 @@
-# sudaone
-welcome suda.one
