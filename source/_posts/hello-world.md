@@ -2,7 +2,7 @@
 title: Hello World
 date: 2021/12/29
 categories:
-- 'logs'
+- logs
 ---
 Welcome to [Suda Notes](https://suda.one/)! This is my first post. 
 
