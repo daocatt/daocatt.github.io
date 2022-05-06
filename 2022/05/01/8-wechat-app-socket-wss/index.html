@@ -11,36 +11,36 @@
   <meta charset="utf-8">
 
   
-  <title>Suda Notes</title>
+  <title>小程序 socket 调试</title>
   
-  <link rel="canonical" href="http://example.com/">
+  <link rel="canonical" href="http://example.com/2022/05/01/8-wechat-app-socket-wss/">
   
-  <meta name="description" content="Laravel Suda update notes">
+  <meta name="description" content="小程序内置 wss 的支持，如果使用 socket.io 的话，可以使用这个插件 https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;weapp-socketio&amp;#x2F;weapp.socket.io 这样的话，就可以像 socket-io-client 一样直接使用，可以比较快">
   
   
   <meta name="keywords" content="Laravel,suda,PHP,admin panel,dashboard">
   
   <meta name="author" content="Hiro">
   
-  <meta property="og:image" content="http://example.com/images/thumbnail.jpg">
+  <meta property="og:image" content="http://example.comundefined">
   
   <meta property="og:site_name" content="Suda Notes" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Suda Notes" />
+  <meta property="og:title" content="小程序 socket 调试" />
   
-  <meta property="og:description" content="Laravel Suda update notes">
+  <meta property="og:description" content="小程序内置 wss 的支持，如果使用 socket.io 的话，可以使用这个插件 https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;weapp-socketio&amp;#x2F;weapp.socket.io 这样的话，就可以像 socket-io-client 一样直接使用，可以比较快">
   
-  <meta property="og:url" content="http://example.com/" />
+  <meta property="og:url" content="http://example.com/2022/05/01/8-wechat-app-socket-wss/" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Suda Notes">
+  <meta name="twitter:title" content="小程序 socket 调试">
   
-  <meta name="twitter:description" content="Laravel Suda update notes">
+  <meta name="twitter:description" content="小程序内置 wss 的支持，如果使用 socket.io 的话，可以使用这个插件 https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;weapp-socketio&amp;#x2F;weapp.socket.io 这样的话，就可以像 socket-io-client 一样直接使用，可以比较快">
   
   
-  <meta name="twitter:image" content="http://example.com/images/thumbnail.jpg">
+  <meta name="twitter:image" content="http://example.comundefined">
   
-  <meta name="twitter:url" content="http://example.com/" />
+  <meta name="twitter:url" content="http://example.com/2022/05/01/8-wechat-app-socket-wss/" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -191,175 +191,49 @@
 </div>
 
         <div class="trans">
-          <div class="row">
-  <div class="column">
-    <!-- Main information, edit it on theme/_config.yml -->
-    <h2 class="mb-2">Hi, I&#39;m Hiro</h2>
-    <p>A web developer | Product/Project Manager.</p>
-    <p>Developing Laravel Suda and related projects.</p>
+            <h2>小程序 socket 调试</h2>
+
+  <p>小程序内置 wss 的支持，如果使用 socket.io 的话，可以使用这个插件</p>
+<pre class="line-numbers language-none"><code class="language-none">https:&#x2F;&#x2F;github.com&#x2F;weapp-socketio&#x2F;weapp.socket.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这样的话，就可以像 socket-io-client 一样直接使用，可以比较快的整合</p>
+<hr>
+<p>我们无法准确判断防疫手段的优劣，但是我们能真切体会防疫过程中作为普通人被社会对待的那种感受，无论是冷漠热情还是辛酸劳累，甚至是死亡。</p>
+
+  <p> — 2022年5月2日</p>
+  
+  <hr>
+<section id="comments" class="mt-2 mb-3">
+
+  <div id="disqus_thread">
+    <a href="#" class="button button-primary" onclick="loadDisqus();return false;">View / Make Comments</a>
   </div>
-</div>
 
-<div class="row mt-3">
-  <div class="column">
-    <!-- Main information, edit it on theme/_config.yml -->
-    <h2 class="mb-2">Working</h2>
-    
-      
-      <div class="left">
-        <a target="_blank" rel="noopener" href="https://suda.gtd.xyz">
-          Suda
-        </a>
-      </div>
-    
-      
-      <div class="left">
-        <a target="_blank" rel="noopener" href="https://app.gtd.xyz">
-          GTD
-        </a>
-      </div>
-    
-      
-      <div class="left">
-        <a target="_blank" rel="noopener" href="https://dajidan.xyz">
-          没事打鸡蛋
-        </a>
-      </div>
-    
-  </div>
-</div>
+  <script>
+    var disqus_config = function() {
+      this.page.url = 'http://example.com/2022/05/01/8-wechat-app-socket-wss/index.html';
+      this.page.identifier = '2022/05/01/8-wechat-app-socket-wss/index.html';
+      this.page.title = '小程序 socket 调试';
+    };
 
-<h2 class="mt-3">Recent Posts</h2>
+    var is_disqus_loaded = false;
+
+    function loadDisqus() {
+      if (!is_disqus_loaded) {
+        is_disqus_loaded = true;
+
+        var d = document,
+          s = d.createElement('script');
+        s.src = 'https://suda-notes.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+    }
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年5月4日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/05/03/9-elasticsearch-install/" >
-      
-        elasticsearch install
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年5月2日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/05/01/8-wechat-app-socket-wss/" >
-      
-        小程序 socket 调试
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年3月29日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/03/28/7-shanghai-covid19/" >
-      
-        上海抗疫日记
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年2月15日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/02/14/6-mkdocs-github-pages/" >
-      
-        Mkdocs with Github Actions
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年2月11日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/02/10/5-online-meeting-tool/" >
-      
-        Online meeting tools / product design
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年1月4日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/01/03/build-with-coding/" >
-      
-        Coding Devops / Jenkinsfile
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2021年12月30日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2021/12/29/how-build-with-hexo/" >
-      
-        用 Hexo/Github Pages 打造网站
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2021年12月29日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2021/12/29/minishop-service-online/" >
-      
-        小商店装修插件上线
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2021年12月29日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2021/12/28/hello-world/" >
-      
-        Hello World
-      
-    </a>
-  </div>
-</div>
-
-
-<h4> <a href="/archives">All Posts</a></h4>
 
           <div class="row mt-2">
   
